@@ -61,3 +61,29 @@ print(res)'''
 #programa debe indicar cuántos de estos números son pares, cuántos son impares, cuántos son 
 #negativos y cuántos son positivos. (Nota: para probar el programa puedes usar una cantidad 
 #menor, pero debe estar preparado para procesar 100 números con un solo cambio). 
+'''par = 0
+for u in range(100):
+    num = int(input("ingrese un numero. "))
+    if(num % 2 == 0):
+        par = par + 1
+    else:
+        pass
+print(par)'''
+#9) Elabora un programa que permita al usuario ingresar 100 números enteros y luego calcule la 
+#media de esos valores. (Nota: puedes probar el programa con una cantidad menor, pero debe 
+#poder procesar 100 números cambiando solo un valor). 
+'''from statistics import mean
+res = 0
+count = 100
+for u in range(count):
+    num = int(input("ingrese un numero. "))
+    res = res + num
+print(res/count)'''
+#10) Escribe un programa que invierta el orden de los dígitos de un número ingresado por el 
+#usuario. Ejemplo: si el usuario ingresa 547, el programa debe mostrar 745.
+'''num = input("Ingrese un numero ")
+if num.startswith('-'):
+    numinv = '-' + num[:0:-1]
+else:
+    numinv = num[::-1]
+print("Nnmero invertido ", numinv)'''
