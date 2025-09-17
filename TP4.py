@@ -47,3 +47,42 @@ print(f"3: {impr}")'''
 #4) Dada una lista con valores repetidos: 
 #• Crear una nueva lista sin elementos repetidos. 
 #• Mostrar el resultado. 
+'''datos = [1 , 3 , 5 , 3 , 7 , 1 , 9 , 5 , 3]
+list2 = []
+for i in datos:
+    if i in list2:
+        pass
+    else:
+        list2.append(i)
+print(datos)
+print(list2)'''
+#5) Crear una lista con los nombres de 8 estudiantes presentes en clase. 
+#• Preguntar al usuario si quiere agregar un nuevo estudiante o eliminar uno existente. 
+#• Mostrar la lista final actualizada. 
+'''list = ["Al" , "Baal" , "Cal" , "Dali" , "Earl" , "Far Quad" , "Gal" , "Lil' Hal"]
+desic = int(input("Quiere agregar(1) o remover(0) a un estudiante? (si no quiere cambios entre otro numero)"))
+if desic == 0:
+    deth = input("Cual estudiante quiere eliminar?")
+    if deth in list:
+        list.remove(deth)
+    else:
+        print("Error. Cambio no efectuado")
+elif desic == 1:
+    add = input("Cual estudiante quiere eliminar?")
+    list.append(add)
+else:
+    pass
+for i in list:
+    print(i)'''
+#6) Dada una lista con 7 números, rotar todos los elementos una posición hacia la derecha (el 
+#último pasa a ser el primero).
+'''list = [1 , 2 , 3 , 4 , 5 , 6 , 7]
+ult = list [-1]
+resto = list[:-1]
+tsil = [ult] + resto
+for i in tsil:
+    print(i)'''
+#7) Crear una matriz (lista anidada) de 7x2 con las temperaturas mínimas y máximas de una 
+#semana. 
+#• Calcular el promedio de las mínimas y el de las máximas. 
+#• Mostrar en qué día se registró la mayor amplitud térmica.
