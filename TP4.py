@@ -86,3 +86,95 @@ for i in tsil:
 #semana. 
 #• Calcular el promedio de las mínimas y el de las máximas. 
 #• Mostrar en qué día se registró la mayor amplitud térmica.
+'''from statistics import mean
+temps = [
+    [1 , 15],
+    [10 , 23],
+    [40 , 41],
+    [-3 , 33],
+    [15 , 15],
+    [9 , 23],
+    [16 , 19]
+]
+mins = []
+maxs = []
+for i in temps:
+    mins.append(min(i))
+    maxs.append(max(i))
+print(f"Promedio de minimas: {mean(mins)}")
+print(f"Promedio de minimas: {mean(maxs)}")
+amptemp = [i[1] - i[0] for i in temps]
+maxamp = amptemp.index(max(amptemp)) + 1
+print(f"el dia de mayor amplitud fue: {maxamp}")'''
+#8) Crear una matriz con las notas de 5 estudiantes en 3 materias. 
+#• Mostrar el promedio de cada estudiante. 
+#• Mostrar el promedio de cada materia. 
+'''from statistics import mean
+nots = [
+    [1 , 10 , 10],
+    [10 , 3 , 9],
+    [4 , 1 , 8],
+    [3 , 3 , 7],
+    [1 , 5 , 6],
+]
+estudiante = 0
+mate = []
+mlengua = []
+mciencia = []
+for i in nots:
+    estu =+ 1
+    print(f"promedio del estudiane {nots.index(i) + 1}: {mean(i)}")
+    mate.append(i[0])
+    mlengua.append(i[1])
+    mciencia.append(i[2])
+print(f"Promedio de Matematica: {mean(mate)}")
+print(f"Promedio de Lengua: {mean(mlengua)}")
+print(f"Promedio de Ciencia: {mean(mciencia)}")'''
+#9) Representar un tablero de Ta-Te-Ti como una lista de listas (3x3). 
+#• Inicializarlo con guiones "-" representando casillas vacías. 
+#• Permitir que dos jugadores ingresen posiciones (fila, columna) para colocar "X" o "O". 
+#• Mostrar el tablero después de cada jugada. 
+'''tate = [
+    ["-" , "-" , "-"],
+    ["-" , "-" , "-"],
+    ["-" , "-" , "-"]
+]
+for i in range(9):
+    print(tate)
+    p1f = int(input("P1, ingrese n° fila ")) - 1
+    p1c = int(input("P1, ingrese n° columna ")) - 1
+    tate[p1f][p1c] = "x"
+    print(tate)
+    p2f = int(input("P2, ingrese fila ")) + 1
+    p2c = int(input("P2, ingrese columna ")) + 1
+    tate[p2f][p2c] = "O"'''
+#10) Una tienda registra las ventas de 4 productos durante 7 días, en una matriz de 4x7. 
+#• Mostrar el total vendido por cada producto. 
+#• Mostrar el día con mayores ventas totales. 
+#• Indicar cuál fue el producto más vendido en la semana.
+'''prod = [
+    [1 , 15 , 35 , 18 , 21 , 54 , 47],
+    [10 , 23 , 8 , 74 , 21 , 54 , 47],
+    [40 , 41 , 38 , 83 , 21 , 54 , 47],
+    [3 , 33 , 18 , 93 , 21 , 54 , 47]
+]
+tot = []
+for i in range(4):
+    totprod = 0
+    for j in range(7):
+        totprod += prod[i][j]
+    tot.append(totprod)
+    print(f"Total del producto {i + 1}: {totprod}")
+#2da parte
+maxdia = 0
+maxvent = 0
+for j in range(7):
+    totdia = 0
+    for i in range(4):
+        totdia += prod[i][j]
+    if totdia > maxvent:
+        maxvent = totdia
+        maxdia = j
+print(f"El dia con las mayores fue el {maxdia + 1}°")
+#3ra parte
+print(tot.index(max(tot)) + 1)'''
