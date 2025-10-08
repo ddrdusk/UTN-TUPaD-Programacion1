@@ -21,3 +21,15 @@ saludar_usuario(input("Ingrese nombre "))'''
     print(f"Soy {nombre} {apellido}, tengo {edad} años y vivo en {residencia}")
 a , b, c, d = input("ingrese nombre, apellido, edad y residencia (separados por un espacio)").split()
 informacion_personal(a , b, c, d)'''
+# 4. Crear dos funciones: calcular_area_circulo(radio) que reciba el ra
+#dio como parámetro y devuelva el área del círculo. calcular_peri
+#metro_circulo(radio) que reciba el radio como parámetro y devuel
+#va el perímetro del círculo. Solicitar el radio al usuario y llamar am
+#bas funciones para mostrar los resultados.
+def calcular_area_circulo(radio):
+    print("el radio es: ")
+def calcular_perimetro_circulo(radio):
+    print("el perimetro es: ")
+radio = int(input("ingrese el radio "))
+calcular_area_circulo(radio)
+calcular_perimetro_circulo(radio)
