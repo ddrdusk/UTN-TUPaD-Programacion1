@@ -71,3 +71,29 @@ operaciones_basicas(num1 , num2)'''
 #peso en kilogramos y la altura en metros, y devuelva el índice de
 #masa corporal (IMC). Solicitar al usuario los datos y llamar a la 
 #función para mostrar el resultado con dos decimales.
+'''def calcular_imc(peso, altura):
+    imc = peso / (altura ** 2)
+    print(f"Su indice de masa corporal es {imc}")
+alt = int(input("ingrese su altura en metros "))
+kg = int(input("ingrese su peso en kilos "))
+calcular_imc(kg, alt)'''
+#9. Crear una función llamada celsius_a_fahrenheit(celsius) que reciba
+#una temperatura en grados Celsius y devuelva su equivalente en
+#Fahrenheit. Pedir al usuario la temperatura en Celsius y mostrar el
+#resultado usando la función.
+'''def celsius_a_fahrenheit(celsius):
+    fahr = (celsius * 1.8) + 32
+    print(f"La temperatura en F° es {fahr}°")
+celsius_a_fahrenheit(float(input("ingrese la temperatura en celsius")))'''
+#10.Crear una función llamada calcular_promedio(a, b, c) que reciba
+#tres números como parámetros y devuelva el promedio de ellos.
+#Solicitar los números al usuario y mostrar el resultado usando esta
+#función.
+from statistics import mean
+def calcular_promedio(a, b, c):
+    total = mean([a, b, c])
+    print(f"el promedio es {total}")
+num1 = int(input("ingrese el primer numero"))
+num2 = int(input("ingrese el segundo numero"))
+num3 = int(input("ingrese el tercer numero"))
+calcular_promedio(num1, num2, num3)
