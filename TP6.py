@@ -57,7 +57,7 @@ for i in notas:
 #7) Dado dos sets de números, representando dos listas de estudiantes que aprobaron Parcial 1 y Parcial 2: 
 #• Mostrá los que aprobaron ambos parciales. • Mostrá los que aprobaron solo uno de los dos. 
 #• Mostrá la lista total de estudiantes que aprobaron al menos un parcial (sin repetir).
-parc1 = (1,3,4,6)
+'''parc1 = (1,3,4,6)
 parc2 = (2,3,5,6)
 ambparc = []
 aprob = set(parc1 + parc2)
@@ -67,4 +67,7 @@ for i in aprob:
     else:
         pass
 print(aprob)
-print(ambparc)
+print(ambparc)'''
+#8) Armá un diccionario donde las claves sean nombres de productos y los valores su stock. 
+#Permití al usuario: • Consultar el stock de un producto ingresado. 
+#• Agregar unidades al stock si el producto ya existe. • Agregar un nuevo producto si no existe.
