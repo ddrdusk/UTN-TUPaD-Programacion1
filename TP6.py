@@ -111,3 +111,8 @@ while act != "4":
         print("Error! Elija otra opcion")'''
 #9) Creá una agenda donde las claves sean tuplas de (día, hora) y los valores sean eventos.
 #Permití consultar qué actividad hay en cierto día y hora.
+
+#10) Dado un diccionario que mapea nombres de países con sus capitales, construí un nuevo 
+#diccionario donde: 
+#• Las capitales sean las claves. 
+#• Los países sean los valores.
