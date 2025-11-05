@@ -71,3 +71,43 @@ print(ambparc)'''
 #8) Armá un diccionario donde las claves sean nombres de productos y los valores su stock. 
 #Permití al usuario: • Consultar el stock de un producto ingresado. 
 #• Agregar unidades al stock si el producto ya existe. • Agregar un nuevo producto si no existe.
+'''stock = {}
+act = ""
+while act != "4":
+    print("")
+    print("1. Consultar stock")
+    print("2. Agregar unidades a stock")
+    print("3. Agregar nuevo producto")
+    print("4. Salir")
+    act = input("Que quiere hacer? ")
+    if act == "1":
+        product = input("Cual producto? ").lower()
+        if product in stock:
+            print(f"El producto {product} tiene {stock[product]} unidades")
+        else:
+            print(f"El producto '{product}' no está en el catalogo")
+    elif act == "2":
+        if len(stock) == 0:
+            print("No hay stock")
+        else:
+            product = input("Que quiere suministrar ").lower()
+            if product in stock:
+                unid = int(input("Cuantas unidades? "))
+                stock[product] += unid
+                print(f"Hecho! Se han agregado {unid} unidades a {product}")
+            else:
+                print(f"El producto '{product}' no está en el catalogo")
+    elif act == "3":
+        product = input("Que producto desea agregar? ").lower()
+        if product in stock:
+            print(f"El producto '{product}' ya está en el catalogo")
+        else:
+            unid = int(input("Cuantas unidades desea agregar? "))
+            stock[product] = unid
+            print(f"Hecho! Se ha agregado {product} a catalogo")
+    elif act == "4":
+        print("Adios")
+    else:
+        print("Error! Elija otra opcion")'''
+#9) Creá una agenda donde las claves sean tuplas de (día, hora) y los valores sean eventos.
+#Permití consultar qué actividad hay en cierto día y hora.
