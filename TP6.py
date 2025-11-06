@@ -111,8 +111,41 @@ while act != "4":
         print("Error! Elija otra opcion")'''
 #9) Creá una agenda donde las claves sean tuplas de (día, hora) y los valores sean eventos.
 #Permití consultar qué actividad hay en cierto día y hora.
-
+'''agenda = {
+    (4 , 13) : "estreno",
+    (6 , 12) : "concurso",
+    (10 , 1) : "fin"
+}
+act = ""
+while act != "2":
+    print("Agenda")
+    print("1. Revisar fecha")
+    print("2. Salir")
+    act = input("Que quiere hacer? ")
+    if act == "1":
+        dia = int(input("Que dia? "))
+        hora = int(input("A que hora? "))
+        if (dia,hora) in agenda:
+            print(agenda[(dia,hora)])
+        else:
+            print("Horario libre")
+    elif act == "2":
+        print("Adios")
+    else:
+        print("Error! Elija otra opcion")'''
 #10) Dado un diccionario que mapea nombres de países con sus capitales, construí un nuevo 
 #diccionario donde: 
 #• Las capitales sean las claves. 
 #• Los países sean los valores.
+'''pais = {
+    "Argentina" : "CABA",
+    "Perú" : "Lima",
+    "Uruguay" : "Montevideo"
+}
+capital = {}
+#programa
+def nue_capital(a,b):
+    for i in pais:
+        capital[pais[i]] = i
+nue_capital(pais, capital)
+print(capital)'''
