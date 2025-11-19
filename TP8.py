@@ -10,10 +10,27 @@ x = int(input("ingrese un numero "))
 print(factorial(x))'''
 #2) Crea una función recursiva que calcule el valor de la serie de Fibonacci en la posición 
 #indicada. Posteriormente, muestra la serie completa hasta la posición que el usuario especifique. 
-
+'''def fibonacci(x):
+    if x == 0:
+        return 0
+    elif x == 1:
+        return 1
+    else:
+        return fibonacci(x - 1) + fibonacci(x - 2)
+num = int(input("ingrese un numero "))
+print(fibonacci(num))'''
 #3) Crea una función recursiva que calcule la potencia de un número base elevado a un 
 #exponente, utilizando la fórmula 𝑛𝑚 = 𝑛 ∗ 𝑛(𝑚−1). Prueba esta función en un algoritmo general. 
-
+'''def potencia(x , y):
+    if y == 0:
+        return 1
+    elif y == 1:
+        return x
+    else:
+        return x * potencia(x , y - 1)
+num = int(input("ingrese un numero "))
+exp = int(input("ingrese exponente "))
+print(potencia(num , exp))'''
 #4) Crear una función recursiva en Python que reciba un número entero positivo en base 
 #decimal y devuelva su representación en binario como una cadena de texto. 
 #Cuando representamos un número en binario, lo expresamos usando solamente ceros (0) y 
