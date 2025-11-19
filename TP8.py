@@ -1,7 +1,13 @@
 #1) Crea una función recursiva que calcule el factorial de un número. Luego, utiliza esa 
 #función para calcular y mostrar en pantalla el factorial de todos los números enteros 
 #entre 1 y el número que indique el usuario 
-
+'''def factorial(num):
+    if num == 0:
+        return 1
+    else:
+        return num * factorial(num - 1)
+x = int(input("ingrese un numero "))
+print(factorial(x))'''
 #2) Crea una función recursiva que calcule el valor de la serie de Fibonacci en la posición 
 #indicada. Posteriormente, muestra la serie completa hasta la posición que el usuario especifique. 
 
