@@ -45,13 +45,24 @@ print(potencia(num , exp))'''
             #2 ÷ 2 = 1     resto: 0   
             #1 ÷ 2 = 0     resto: 1   
             #Leyendo los restos de abajo hacia arriba: 1 0 1 0 → El resultado binario es "1010". 
-
+'''def binario(x):
+    if x == 0:
+        return "0"
+    elif x == 1:
+        return "1"
+    else:
+        if x % 2 == 0:
+            return binario(x / 2) + "0"
+        else:
+            return binario((x - 1) / 2) + "1"
+num = int(input("ingrese un numero "))
+print(binario(num))'''
 #5) Implementá una función recursiva llamada es_palindromo(palabra) que reciba una 
 #cadena de texto sin espacios ni tildes, y devuelva True si es un palíndromo o False si no lo es. 
     #Requisitos: 
         #La solución debe ser recursiva. 
         #No se debe usar [::-1] ni la función reversed().
-  
+
 #6) Escribí una función recursiva en Python llamada suma_digitos(n) que reciba un 
 #número entero positivo y devuelva la suma de todos sus dígitos. 
     #Restricciones: 
