@@ -62,7 +62,11 @@ print(binario(num))'''
     #Requisitos: 
         #La solución debe ser recursiva. 
         #No se debe usar [::-1] ni la función reversed().
-
+def palindrom(x):
+    if " " in x or "~":
+        return "Error!"
+    else:
+        return "aaaaaaaahhhhhhhh"
 #6) Escribí una función recursiva en Python llamada suma_digitos(n) que reciba un 
 #número entero positivo y devuelva la suma de todos sus dígitos. 
     #Restricciones: 
