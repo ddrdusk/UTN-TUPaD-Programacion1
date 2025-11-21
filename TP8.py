@@ -62,11 +62,18 @@ print(binario(num))'''
     #Requisitos: 
         #La solución debe ser recursiva. 
         #No se debe usar [::-1] ni la función reversed().
-def palindrom(x):
-    if " " in x or "~":
-        return "Error!"
-    else:
-        return "aaaaaaaahhhhhhhh"
+'''def fl1p(w, left, right):
+    if left >= right:
+        return True
+    if w[left] != w[right]:
+        return False
+    return fl1p(w, left + 1, right - 1)
+    
+def palindrom(w):
+    return fl1p(w, 0, len(w) - 1)
+
+wrd = input("ingrese una palabra ")
+print(palindrom(wrd))'''
 #6) Escribí una función recursiva en Python llamada suma_digitos(n) que reciba un 
 #número entero positivo y devuelva la suma de todos sus dígitos. 
     #Restricciones: 
@@ -76,7 +83,15 @@ def palindrom(x):
         #suma_digitos(1234)   → 10  (1 + 2 + 3 + 4) 
         #suma_digitos(9)      → 9 
         #suma_digitos(305)    → 8   (3 + 0 + 5) 
-
+'''def digitsum(x):
+    if x == 0:
+        return 0
+    elif x < 0:
+        return "Error!"
+    else:
+        return (x % 10) + digitsum(x // 10)
+num = int(input("ingrese un numero "))
+print(digitsum(num))'''
 #7) Un niño está construyendo una pirámide con bloques. En el nivel más bajo coloca n 
 #bloques, en el siguiente nivel uno menos (n - 1), y así sucesivamente hasta llegar al 
 #último nivel con un solo bloque. Escribí una función recursiva contar_bloques(n) que reciba el número de bloques en el 
@@ -85,7 +100,15 @@ def palindrom(x):
         #contar_bloques(1)   → 1         (1) 
         #contar_bloques(2)   → 3         (2 + 1) 
         #contar_bloques(4)   → 10        (4 + 3 + 2 + 1) 
-
+'''def pharaoh(x):
+    if x == 0:
+        return 0
+    elif x < 0:
+        return "Error!"
+    else:
+        return x + pharaoh(x - 1)
+num = int(input("ingrese un numero "))
+print(pharaoh(num))'''
 #8) Escribí una función recursiva llamada contar_digito(numero, digito) que reciba un 
 #número entero positivo (numero) y un dígito (entre 0 y 9), y devuelva cuántas veces 
 #aparece ese dígito dentro del número. 
@@ -93,3 +116,11 @@ def palindrom(x):
         #contar_digito(12233421, 2)   → 3   
         #contar_digito(5555, 5)       → 4
         #contar_digito(123456, 7)     → 0
+def digicont(x, digito):
+    if x < 10:
+        return 1 if x == digito else 0
+    ultimo = x % 10
+    return (1 if ultimo == digito else 0) + digicont(x // 10, digito)
+num = int(input("ingrese un numero "))
+dig = int(input("ingrese el numero que busca "))
+print(digicont(num , dig))
