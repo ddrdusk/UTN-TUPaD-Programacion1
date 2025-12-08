@@ -15,5 +15,9 @@ o Participación de los integrantes.
     7. "Ordenar países" muestra todos los paises en el diccionario en orden ascendiente o descendiente segun el valor elegido (nombre/poblacion/superficie)
     8. "Mostrar estadísticas" muestra en el siguiente orden; el país con mayor población, el país con menor población, el promedio de población entre todos los paises, el promedio de superficie entre todos los paises, y la cantidad de países en cada continente
     9. "Salir" cierra el programa.
-3. 
+3. Seleccione una opción: - 1 - Ingrese el nombre del país: - x - Ingrese la población del país: - 1 - Ingrese la superficie en km² del país: - 2 - Ingrese el continente del país: - y - País agregado correctamente.
+
+- 2 - Ingrese el nombre del país a actualizar: - x - Datos actuales de x: Población = 1, Superficie = 2 / Ingrese la nueva población: - 3 - Ingrese la nueva superficie: - 4 - Datos actualizados correctamente.
+
+- 8 - País con mayor población: x (3) / País con menor población: x (3) / Promedio de población: 3.00 / Promedio de superficie: 4.00 / Cantidad de países en Y: 1
 4. Hice todo yo :)
